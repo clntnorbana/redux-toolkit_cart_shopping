@@ -1,6 +1,8 @@
 import { useDispatch } from "react-redux";
 import { addToCart } from "../cart/cartSlice";
 
+import cellphone from "/cellphone.png";
+
 const ProductDetail = ({ product }) => {
   const dispatch = useDispatch();
 
@@ -11,7 +13,7 @@ const ProductDetail = ({ product }) => {
   return (
     <div className="product">
       <div className="img-container">
-        <img src={product.img} alt={product.title} />
+        <img src={cellphone} alt={product.title} />
       </div>
       <div className="body">
         <p className="title">{product.title}</p>
